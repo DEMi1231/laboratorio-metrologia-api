@@ -1,0 +1,31 @@
+[project]
+name = "pia-desarrolloweb"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "DEMi1231",email = "fernanvalde@hotmail.com"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi (>=0.162.5,<0.163.0)",
+    "uvicorn[standard] (>=0.54.0,<0.55.0)",
+    "sqlalchemy (>=2.1.8,<3.0.0)",
+    "pymysql (>=1.2.4,<2.0.0)",
+    "pydantic-settings (>=2.16.2,<3.0.0)",
+    "email-validator (>=2.3.0,<3.0.0)",
+    "pyjwt (>=2.15.1,<3.0.0)",
+    "pwdlib[argon2] (>=0.3.1,<0.4.0)",
+    "python-multipart (>=0.0.33,<0.0.34)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.2.0,<10.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "httpx2 (>=2.16.0,<3.0.0)"
+]
